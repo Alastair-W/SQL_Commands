@@ -16,5 +16,5 @@ select hour(created_at) AS date_hour, created_at from tweets;
 select dayname(created_at) AS date_day, created_at from tweets;
 select month(created_at) AS date_month, created_at from tweets;
 select now() as right_now;
-select date_format(created_at, '%W %M %e, %Y') from tweets;
+select date_format(created_at, '%W %M %e, %Y at %r') from twitter.tweets;
 
